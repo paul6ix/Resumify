@@ -19,5 +19,6 @@ from generator import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.ResumeView, name='resume')
+    path('', views.ResumeView, name='resume'),
+    path('<int:id>/', views.DesignView, name='design')
 ]

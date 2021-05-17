@@ -3,11 +3,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Template</title>
+    <title>Template for {{ applicant.role }}</title>
     <link rel="stylesheet" href="{% static 'generator/css/bootstrap.css' %}">
 
 </head>
 <body>
+
+<h2>{{ applicant.name }}</h2>
+<h5>Email: {{ applicant.email }}   <span>Phone:  {{ applicant.phone }}</span></h5>
+<hr/>
+<h3>Summary</h3>
+<p>{{ applicant.summary }}</p>
+<h3>Skills</h3>
+<p>{{ applicant.skills }}</p>
+<h3>Education</h3>
+<p>{{ applicant.university }}</p>
+<p>{{ applicant.degree }}</p>
+<hr/>
+<h3>Experience</h3>
+<p>{{ applicant.current_role }}</p>
+
+
 
 </body>
 </html>
